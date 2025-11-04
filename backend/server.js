@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ✅ Default Route (Root URL)
+app.get('/', (req, res) => {
+  res.send("✅ MEAN Notes Backend is Running");
+});
+
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ MongoDB Atlas Connected"))
