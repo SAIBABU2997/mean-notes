@@ -13,6 +13,9 @@ app.use(express.json());
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ MongoDB Atlas Connected"))
 .catch(err => console.log("❌ DB Error:", err));
+app.get('/', (req, res) => {
+  res.send("✅ MEAN Notes Backend is Running");
+});
 
 // Routes
 const notesRoute = require("./routes/noteRoutes");
