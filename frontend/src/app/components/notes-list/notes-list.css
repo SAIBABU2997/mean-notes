@@ -1,0 +1,21 @@
+.note-card {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
